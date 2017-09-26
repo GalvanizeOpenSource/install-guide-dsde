@@ -1,18 +1,18 @@
 
-NOTE: these install instructions will install a Python3 default environment with a Python2 backup.
+NOTE: these install instructions will install a Python 3 default environment with a Python 2 backup.
 
 
 # PYTHON INSTALLATION GUIDE
 
 
-## Install a Python 3 as the default envrionment
+## Install Python 3 as the default envrionment
 
 If there is an old version of anaconda you can remove it with
 
    ```
    ~$ rm -rf ~/anaconda*
    ```
-Download the image or install script from https://www.continuum.io/downloads
+Download the latest Python 3.X image or install script from https://www.continuum.io/downloads
 
 
 ### On Ubuntu
@@ -21,7 +21,7 @@ Download the image or install script from https://www.continuum.io/downloads
 1. install via the command line
 
    ``` 
-   ~$ bash ~/Downloads/Anaconda3-4.3.1-Linux-x86_64.sh
+   ~$ bash ~/Downloads/Anaconda3-4.4.0-Linux-x86_64.sh
    ```
    
 Answer yes to the path adding question
