@@ -2,7 +2,10 @@
 NOTE: these install instructions will install a Python3 default environment with a Python2 backup.
 
 
-## INSTALLING PYTHON
+# PYTHON INSTALLATION PYTHON
+
+
+## Install a Python 3 as the default envrionment
 
 If there is an old version of anaconda you can remove it with
 
