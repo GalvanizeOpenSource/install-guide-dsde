@@ -2,8 +2,7 @@
 NOTE: these install instructions will install a Python3 default environment with a Python2 backup.
 
 
-INSTALLING PYTHON
---------------------
+## INSTALLING PYTHON
 
 If there is an old version of anaconda you can remove it with
 
@@ -13,8 +12,8 @@ If there is an old version of anaconda you can remove it with
 Download the image or install script from https://www.continuum.io/downloads
 
 
-On Ubuntu
-^^^^^^^^^^^^
+### On Ubuntu
+
 
 1. install via the command line
 
@@ -27,8 +26,8 @@ Answer yes to the path adding question
 2. Restart terminal
 
 
-On OSX
-^^^^^^^^^^
+### On OSX
+
 
 1. Run the installer on the downloaded image
 
@@ -37,8 +36,8 @@ Answer yes to the path adding question
 2. restart terminal
 
 
-Then run this to create a working python 2 environment
------------------------------------------------------------
+## Then run this to create a working python 2 environment
+
 
    ```
    ~$ conda create -n py2 python=2 anaconda
@@ -56,8 +55,8 @@ To toggle back to a Python3 environment
    ~$ source deactivate py2
    ```
    
-Then ensure you can run Jupyter with Py2
-------------------------------------------
+## Then ensure you can run Jupyter with Py2
+
 
    ```
    ~$ source activate py2
@@ -65,8 +64,7 @@ Then ensure you can run Jupyter with Py2
    ~$ ipython kernel install --user
    ```
    
-Keeping conda up-to-date
-------------------------------
+## Keeping conda up-to-date
 
    ```
    ~$ conda update conda
