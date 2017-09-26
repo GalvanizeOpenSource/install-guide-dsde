@@ -2,7 +2,7 @@
 NOTE: these install instructions will install a Python3 default environment with a Python2 backup.
 
 
-# PYTHON INSTALLATION PYTHON
+# PYTHON INSTALLATION GUIDE
 
 
 ## Install a Python 3 as the default envrionment
