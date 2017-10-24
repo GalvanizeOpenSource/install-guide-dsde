@@ -71,5 +71,5 @@ To toggle back to a Python3 environment
 
    ```
    ~$ conda update conda
-   ~$ conda updata --all 
+   ~$ conda update --all 
    ```
