@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docker Installation Guide &mdash; Project Title</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Python Installation Guide" href="python-env.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #000099" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/galvanize-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Install Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="remote-learning-env.html">Remote learning environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-env.html">Python Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Docker Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#docker-installation-and-setup">Docker installation and setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nvidia-docker">NVIDIA Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Docker Installation Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/docker-env.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="docker-installation-guide">
+<h1>Docker Installation Guide<a class="headerlink" href="#docker-installation-guide" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.docker.com/">Docker</a> is now firmly placed among the most important tools for a data team.  It is an
+open-source application that performs operating-system level
+<a class="reference external" href="https://en.wikipedia.org/wiki/Operating-system-level_virtualization">containerization</a>. These containers can hold
+multiple independently running applications.  Docker creates a portable and reusable environment and it is far easier
+then running explicit servers or virtual environments.  In data science today, Docker is the industry standard for
+containerization of machine learning models and AI services.</p>
+<p>The community package of the Docker Engine is called <code class="docutils literal notranslate"><span class="pre">docker-ce</span></code>.  Fundamentally, a docker container can be thought
+of as a running script with all the necessary components bundled within.  The containers themselves sit on top of an
+operating system as shown in the following image.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/containers.png"><img alt="containers" src="_images/containers.png" style="width: 715.0px; height: 470.0px;" /></a>
+</div>
+<p>The Docker container is a running process that is kept isolated from the host and from other containers. One of the
+important consequence of this isolation is that each container interacts with its own private filesystem. A Docker image
+includes everything needed to run an application: code, runtime libraries, and a private filesystem.</p>
+<div class="section" id="docker-installation-and-setup">
+<h2>Docker installation and setup<a class="headerlink" href="#docker-installation-and-setup" title="Permalink to this headline">¶</a></h2>
+<p>To install the Docker Engine use the appropriate guide from the following:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/install/linux/docker-ce/ubuntu">Docker Ubuntu install guide</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/docker-for-mac/install">Docker macOS install guide</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">Docker Windows install guide</a></p></li>
+</ul>
+<p>When you have finished the install you should be able to run the “hello world” example.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ docker run hello-world
+</pre></div>
+</div>
+<p>or if root privileges are required</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ sudo docker run hello-world
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+</pre></div>
+</div>
+<p>Congratulations! You have just run a container.  It could have been anything from a fully functional spark environment
+to a simple model that a colleague has recently deployed.  There are a number of arguments for the <cite>docker run</cite> command
+that we will get into, but this is the basis for running containers.</p>
+</div>
+<div class="section" id="nvidia-docker">
+<h2>NVIDIA Docker<a class="headerlink" href="#nvidia-docker" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This section on NVIDIA Docker is here for your reference, but it is not required for Galvanize trainings</p>
+</div>
+<p>To use <a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a> with a GPU you need to ensure that the
+<a class="reference external" href="https://www.nvidia.com/Download/index.aspx">NVIDIA driver</a>, <a class="reference external" href="https://developer.nvidia.com/cuda-zone">CUDA</a> and
+additional required libraries are set up and versioned appropriately. Then you can install <code class="docutils literal notranslate"><span class="pre">tensroflow-gpu</span></code>.  There is
+some amount of overhead involved in getting this ecosystem running smoothly and additionally there are maintenance
+requirements as the stable version changes over time.  TensorFlow can also be installed via Docker with the use of a GPU.</p>
+<p>The process is similar for <a class="reference external" href="https://pytorch.org/">PyTorch</a>, <a class="reference external" href="https://caffe.berkeleyvision.org/">Caffe</a> and in general
+any deep-learning framework that makes use of GPUs.  The NVIDIA container toolkit or simply
+<a class="reference external" href="https://github.com/NVIDIA/nvidia-docker">nvidia-docker</a> is an incredibly convenient way to build and run
+GPU-accelerated Docker containers.  Once this is done, you can pull down the latest GPU version of tensorflow with Jupyter
+support with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ docker pull tensorflow/tensorflow:latest-gpu-jupyter
+</pre></div>
+</div>
+<p>NVIDIA Docker and GPU computing are not required for this course or any in this specialization, but
+knowledge of Dockerized versions of TensorFlow and similar tools can save significant amounts of time.  You will need
+to ensure that <code class="docutils literal notranslate"><span class="pre">docker-ce</span></code> is installed.</p>
+<div class="section" id="additional-resources">
+<h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/get-started/overview/">Docker Overview</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/docker-for-mac/#preferences-menu">Tweaking Docker for macOS</a></p></li>
+<li><p><a class="reference external" href="https://github.com/NVIDIA/nvidia-docker">nvidia-docker</a></p></li>
+<li><p><a class="reference external" href="https://github.com/NVIDIA/nvidia-docker/wiki">nvidia-docker documentation</a></p></li>
+<li><p><a class="reference external" href="https://www.tensorflow.org/install/docker">TensorFlow Docker Images</a></p></li>
+<li><p><a class="reference external" href="https://ngc.nvidia.com/catalog/containers/nvidia:pytorch">PyTorch NVIDIA docker</a></p></li>
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/tasks/docker/">Anaconda’s Docker images</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="python-env.html" class="btn btn-neutral float-left" title="Python Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

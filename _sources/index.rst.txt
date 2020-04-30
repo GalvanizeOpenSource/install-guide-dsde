@@ -1,0 +1,33 @@
+.. title of course
+
+###############################
+Galvanize DSDE Install Guides
+###############################
+
+.. figure:: ../images/galvanize-logo.png
+   :scale: 15%
+   :align: center
+   :alt: galvanize-logo
+   :figclass: align-center
+
+Galvanize Data Science and Data Engineering (DSDE) educational products require that students have the ability to work
+locally from individual machines.  These install guides provide the necessary context to ensure that students can
+install and maintain a local environment.
+
+.. important::
+    You do not need administrator or root permissions to install Anaconda if you select a user-writable install
+    location. However,  you will need administrator privileges for Docker.
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Install Guides
+
+   remote-learning-env
+   python-env
+   docker-env
+
+If you would like to learn more about the data science at Galvanize:
+
+* `Data Science Bootcamp <https://www.galvanize.com/data-science-bootcamp>`_
+* `Galvanize Enterprise Talent Transformation <https://www.galvanize.com/companies>`_

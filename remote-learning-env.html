@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Remote learning environment &mdash; Project Title</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python Installation Guide" href="python-env.html" />
+    <link rel="prev" title="Galvanize DSDE Install Guides" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #000099" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/galvanize-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Install Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Remote learning environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-requirements">System Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#office-requirements">Office Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#machine-requirements">Machine Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software-requirements">Software Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#zoom">Zoom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slack">Slack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-and-github">Git and GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#git-for-windows">Git for Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git-for-macos">Git for MacOS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#website-restrictions">Website restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python-env.html">Python Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-env.html">Docker Installation Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Remote learning environment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/remote-learning-env.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="remote-learning-environment">
+<h1>Remote learning environment<a class="headerlink" href="#remote-learning-environment" title="Permalink to this headline">¶</a></h1>
+<p>The educational products that are offered by Galvanize have two variants: synchronous and blended.  In the case of the
+synchronous emote learning in the case of Galvanize, Inc is called more specifically <em>live online</em>.</p>
+<div class="section" id="system-requirements">
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="office-requirements">
+<h3>Office Requirements<a class="headerlink" href="#office-requirements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>High speed Internet with &gt;= 50Mbps</p></li>
+<li><p>Company-provided and configured VPN (if applicable)</p></li>
+<li><p>Webcam (integrated or dedicated)</p></li>
+<li><p>Headset with microphone (recommended)</p></li>
+</ul>
+</div>
+<div class="section" id="machine-requirements">
+<h3>Machine Requirements<a class="headerlink" href="#machine-requirements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>32- or 64-bit computer</p></li>
+<li><p>8GB Minimum Memory RAM, 16GB Memory RAM is preferred</p></li>
+<li><p>At least 10GB of free hard disk space will be required for most programs</p></li>
+</ul>
+</div>
+<div class="section" id="software-requirements">
+<h3>Software Requirements<a class="headerlink" href="#software-requirements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://slack.com/">Slack desktop</a></p></li>
+<li><p><a class="reference external" href="https://zoom.us/">Zoom conferencing software</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/">Git</a> with a <a class="reference external" href="https://github.com/">GitHub</a> account</p></li>
+</ul>
+<p>The rest of this document details how to install these requirements on your system.  Live online and blended sessions
+will occur principally through Zoom and Slack.  Assignments and the practical application of the topics you will learn
+will take place via GitHub.</p>
+</div>
+</div>
+<div class="section" id="zoom">
+<h2>Zoom<a class="headerlink" href="#zoom" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Install Zoom using the download for you operating system</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://zoom.us/download">Zoom downloads</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Sign up for an account if you do not already have one</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://zoom.us/freesignup/">Zoom signup page</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="slack">
+<h2>Slack<a class="headerlink" href="#slack" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Install slack using the instructions for your operating system</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://slack.com/downloads/mac">Slack Windows install page</a></p></li>
+<li><p><a class="reference external" href="https://slack.com/downloads/mac">Slack MacOS install page</a></p></li>
+<li><p><a class="reference external" href="https://slack.com/downloads/linux">Slack Linux install page</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Once you receive an email from Galvanize with login instructions you can use the information to login</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Slack can be run either from in the browser or installed locally.</p>
+</div>
+</div>
+<div class="section" id="git-and-github">
+<h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">¶</a></h2>
+<p>Git is a <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">version control</a> system that lets you track changes to files
+containing text.  Often these files are scripts or other files that contain computer programming code.
+<a class="reference external" href="https://git-scm.com/">Git</a> through the use of <a class="reference external" href="https://github.com/">GitHub</a> helps enable collaboration, resource
+sharing and reproducible analytics.  You will need a
+<a class="reference external" href="https://help.github.com/en/enterprise/2.15/user/articles/supported-browsers">GitHub supported web browser</a> to complete
+the assignments and tasks that are part of this learning experience.  You will also need to
+<a class="reference external" href="https://github.com/join">sign up for a GitHub account</a> if you do not have one already.  Basic GitHub accounts are
+free. Please create one now if you do not have one already.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are a number of settings associated with your GitHub account.  For example, if you would like to keep your
+email address private see the <a class="reference external" href="https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address">setting your email address documentation</a>.</p>
+</div>
+<div class="section" id="git-for-windows">
+<h3>Git for Windows<a class="headerlink" href="#git-for-windows" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="https://git-for-windows.github.io/">Git for Windows installer</a>.</p></li>
+<li><p>Run the installer and follow the steps below:</p></li>
+<li><p>Click on “Next” four times (two times if you’ve previously installed Git). You don’t need to change anything in
+the Information, location, components, and start menu screens.</p></li>
+<li><p>Select “Use the nano editor by default” and click on <cite>Next</cite>.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Keep <strong>Use Git from the Windows Command Prompt</strong> selected and click on <cite>Next</cite>. If you forgot to do this programs
+that you need for the workshop will not work properly. If this happens rerun the installer and select the
+appropriate option.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Click on <cite>Next</cite>. Keep <strong>Checkout Windows-style, commit Unix-style line endings</strong> selected and click on <cite>Next</cite>.
+Select <strong>Use Windows’ default console window</strong> and click on <cite>Next</cite>.</p></li>
+<li><p>Click on <cite>Install</cite>.</p></li>
+<li><p>Click on <cite>Finish</cite>.</p></li>
+</ol>
+</div></blockquote>
+<p>If your “HOME” environment variable is not set (or you don’t know what this is):</p>
+<ol class="arabic simple">
+<li><p>Open command prompt (Open Start Menu then type cmd and press [Enter])</p></li>
+<li><p>Type the following line into the command prompt window exactly as shown:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ setx HOME <span class="s2">&quot;%USERPROFILE%&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Press <cite>[Enter]</cite> and you should see <cite>SUCCESS: Specified value was saved</cite>.</p></li>
+</ol>
+<p>4. Quit command prompt by typing <cite>exit</cite> then pressing <cite>[Enter]</cite> This will provide you with both Git and
+Bash in the Git Bash program.</p>
+</div>
+<div class="section" id="git-for-macos">
+<h3>Git for MacOS<a class="headerlink" href="#git-for-macos" title="Permalink to this headline">¶</a></h3>
+<p>If it is not already on your machine install <a class="reference external" href="https://brew.sh/">Homebrew</a> (another package manager).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ /usr/bin/ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>Then install Git</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ brew install git
+</pre></div>
+</div>
+<p>Git for Ubuntu Linux</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ sudo apt install git-all
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">installing Git documentation</a> for more
+information and troubleshooting.</p>
+</div>
+</div>
+<div class="section" id="website-restrictions">
+<h2>Website restrictions<a class="headerlink" href="#website-restrictions" title="Permalink to this headline">¶</a></h2>
+<p>Some firewalls prevent access to certain websites.  You will need access to the following websites to ensure a
+successful learning process.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/">https://github.com/</a></p></li>
+<li><p><a class="reference external" href="https://learn-2.galvanize.com/">https://learn-2.galvanize.com/</a></p></li>
+<li><p><a class="reference external" href="https://vimeo.com/">https://vimeo.com/</a></p></li>
+</ul>
+<p>We use Vimeo for pre-recorded lecture videos.  GitHub or more in general a centralized resource for version control
+is a cornerstone of modern data science.</p>
+</div>
+<div class="section" id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://slack.com/resources/using-slack/slack-tutorials">Slack Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://support.zoom.us/hc/en-us/articles/206618765-Zoom-Video-Tutorials">Zoom Tutorials</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-env.html" class="btn btn-neutral float-right" title="Python Installation Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Galvanize DSDE Install Guides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>
