@@ -1,11 +1,11 @@
 .. name of course
 
-*************************************   
+*************************************
 Remote learning environment
 *************************************
 
-The educational products that are offered by Galvanize have two variants: synchronous and blended.  In the case of the
-synchronous emote learning in the case of Galvanize, Inc is called more specifically *live online*.
+The educational products that are offered by Galvanize have two variants: synchronous and blended.
+Synchronous remote learning at Galvanize is called, more specifically, *live online*.
 
 System Requirements
 =======================
@@ -52,14 +52,14 @@ Slack
 
 1. Install slack using the instructions for your operating system
 
-    * `Slack Windows install page <https://slack.com/downloads/mac>`_
+    * `Slack Windows install page <https://slack.com/downloads/windows>`_
     * `Slack MacOS install page <https://slack.com/downloads/mac>`_
     * `Slack Linux install page <https://slack.com/downloads/linux>`_
 
 2. Once you receive an email from Galvanize with login instructions you can use the information to login
 
 .. note::
-    Slack can be run either from in the browser or installed locally.
+    Slack can be run either in the browser or installed locally.
 
 Git and GitHub
 ================
@@ -83,25 +83,24 @@ Git for Windows
 
     1. Download the `Git for Windows installer <https://git-for-windows.github.io/>`_.
     2. Run the installer and follow the steps below:
-    3. Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in
+    3. Click on `Next` four times (two times if you've previously installed Git). You don't need to change anything in
        the Information, location, components, and start menu screens.
-    4. Select "Use the nano editor by default" and click on `Next`.
+    4. Select **Use the nano editor by default** and click on `Next`.
 
     .. important::
 
-        Keep **Use Git from the Windows Command Prompt** selected and click on `Next`. If you forgot to do this programs
-        that you need for the workshop will not work properly. If this happens rerun the installer and select the
+        Keep **Use Git from the Windows Command Prompt** selected and click on `Next`. If you do not do this, programs
+        that you need for the workshop will not work properly. If this happens, rerun the installer and select the
         appropriate option.
 
     5. Click on `Next`. Keep **Checkout Windows-style, commit Unix-style line endings** selected and click on `Next`.
        Select **Use Windows' default console window** and click on `Next`.
-
     6. Click on `Install`.
     7. Click on `Finish`.
 
 If your "HOME" environment variable is not set (or you don't know what this is):
 
-1. Open command prompt (Open Start Menu then type cmd and press [Enter])
+1. Open command prompt (open Start Menu then type ``cmd`` and press `[Enter]`)
 2. Type the following line into the command prompt window exactly as shown:
 
 .. code-block::
@@ -109,22 +108,21 @@ If your "HOME" environment variable is not set (or you don't know what this is):
 
     ~$ setx HOME "%USERPROFILE%"
 
-3. Press `[Enter]` and you should see `SUCCESS: Specified value was saved`.
+3. Press `[Enter]` and you should see "SUCCESS: Specified value was saved".
 
-4. Quit command prompt by typing `exit` then pressing `[Enter]` This will provide you with both Git and
-Bash in the Git Bash program.
+4. Quit command prompt by typing ``exit`` and pressing `[Enter]`.
 
 Git for MacOS
 ----------------
 
-If it is not already on your machine install `Homebrew <https://brew.sh/>`_ (another package manager).
+If it is not already on your machine install `Homebrew <https://brew.sh/>`_ (another package manager):
 
 .. code-block::
     bash
 
     ~$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Then install Git
+Then install Git:
 
 .. code-block::
     bash
@@ -132,11 +130,17 @@ Then install Git
     ~$ brew install git
 
 Git for Ubuntu Linux
+----------------------
+
+Install Git:
 
 .. code-block::
     bash
 
     ~$ sudo apt install git-all
+
+More Git installation info
+----------------------------
 
 See the `installing Git documentation <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_ for more
 information and troubleshooting.
@@ -151,8 +155,8 @@ successful learning process.
 * `https://learn-2.galvanize.com/ <https://learn-2.galvanize.com/>`_
 * `https://vimeo.com/ <https://vimeo.com/>`_
 
-We use Vimeo for pre-recorded lecture videos.  GitHub or more in general a centralized resource for version control
-is a cornerstone of modern data science.
+We use Vimeo for pre-recorded lecture videos. Using a centralized resource for version control
+(like GitHub) is a cornerstone of modern data science.
 
 Additional Resources
 ===========================

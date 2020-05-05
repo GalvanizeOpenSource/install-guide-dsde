@@ -100,6 +100,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#git-and-github">Git and GitHub</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#git-for-windows">Git for Windows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#git-for-macos">Git for MacOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git-for-ubuntu-linux">Git for Ubuntu Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-git-installation-info">More Git installation info</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#website-restrictions">Website restrictions</a></li>
@@ -198,8 +200,8 @@
 </style>
 <div class="section" id="remote-learning-environment">
 <h1>Remote learning environment<a class="headerlink" href="#remote-learning-environment" title="Permalink to this headline">¶</a></h1>
-<p>The educational products that are offered by Galvanize have two variants: synchronous and blended.  In the case of the
-synchronous emote learning in the case of Galvanize, Inc is called more specifically <em>live online</em>.</p>
+<p>The educational products that are offered by Galvanize have two variants: synchronous and blended.
+Synchronous remote learning at Galvanize is called, more specifically, <em>live online</em>.</p>
 <div class="section" id="system-requirements">
 <h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="office-requirements">
@@ -256,7 +258,7 @@ will take place via GitHub.</p>
 <li><p>Install slack using the instructions for your operating system</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference external" href="https://slack.com/downloads/mac">Slack Windows install page</a></p></li>
+<li><p><a class="reference external" href="https://slack.com/downloads/windows">Slack Windows install page</a></p></li>
 <li><p><a class="reference external" href="https://slack.com/downloads/mac">Slack MacOS install page</a></p></li>
 <li><p><a class="reference external" href="https://slack.com/downloads/linux">Slack Linux install page</a></p></li>
 </ul>
@@ -266,7 +268,7 @@ will take place via GitHub.</p>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Slack can be run either from in the browser or installed locally.</p>
+<p>Slack can be run either in the browser or installed locally.</p>
 </div>
 </div>
 <div class="section" id="git-and-github">
@@ -290,14 +292,14 @@ email address private see the <a class="reference external" href="https://help.g
 <div><ol class="arabic simple">
 <li><p>Download the <a class="reference external" href="https://git-for-windows.github.io/">Git for Windows installer</a>.</p></li>
 <li><p>Run the installer and follow the steps below:</p></li>
-<li><p>Click on “Next” four times (two times if you’ve previously installed Git). You don’t need to change anything in
+<li><p>Click on <cite>Next</cite> four times (two times if you’ve previously installed Git). You don’t need to change anything in
 the Information, location, components, and start menu screens.</p></li>
-<li><p>Select “Use the nano editor by default” and click on <cite>Next</cite>.</p></li>
+<li><p>Select <strong>Use the nano editor by default</strong> and click on <cite>Next</cite>.</p></li>
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Keep <strong>Use Git from the Windows Command Prompt</strong> selected and click on <cite>Next</cite>. If you forgot to do this programs
-that you need for the workshop will not work properly. If this happens rerun the installer and select the
+<p>Keep <strong>Use Git from the Windows Command Prompt</strong> selected and click on <cite>Next</cite>. If you do not do this, programs
+that you need for the workshop will not work properly. If this happens, rerun the installer and select the
 appropriate option.</p>
 </div>
 <ol class="arabic simple" start="5">
@@ -309,32 +311,37 @@ Select <strong>Use Windows’ default console window</strong> and click on <cite
 </div></blockquote>
 <p>If your “HOME” environment variable is not set (or you don’t know what this is):</p>
 <ol class="arabic simple">
-<li><p>Open command prompt (Open Start Menu then type cmd and press [Enter])</p></li>
+<li><p>Open command prompt (open Start Menu then type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> and press <cite>[Enter]</cite>)</p></li>
 <li><p>Type the following line into the command prompt window exactly as shown:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ setx HOME <span class="s2">&quot;%USERPROFILE%&quot;</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>Press <cite>[Enter]</cite> and you should see <cite>SUCCESS: Specified value was saved</cite>.</p></li>
+<li><p>Press <cite>[Enter]</cite> and you should see “SUCCESS: Specified value was saved”.</p></li>
+<li><p>Quit command prompt by typing <code class="docutils literal notranslate"><span class="pre">exit</span></code> and pressing <cite>[Enter]</cite>.</p></li>
 </ol>
-<p>4. Quit command prompt by typing <cite>exit</cite> then pressing <cite>[Enter]</cite> This will provide you with both Git and
-Bash in the Git Bash program.</p>
 </div>
 <div class="section" id="git-for-macos">
 <h3>Git for MacOS<a class="headerlink" href="#git-for-macos" title="Permalink to this headline">¶</a></h3>
-<p>If it is not already on your machine install <a class="reference external" href="https://brew.sh/">Homebrew</a> (another package manager).</p>
+<p>If it is not already on your machine install <a class="reference external" href="https://brew.sh/">Homebrew</a> (another package manager):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ /usr/bin/ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
-<p>Then install Git</p>
+<p>Then install Git:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ brew install git
 </pre></div>
 </div>
-<p>Git for Ubuntu Linux</p>
+</div>
+<div class="section" id="git-for-ubuntu-linux">
+<h3>Git for Ubuntu Linux<a class="headerlink" href="#git-for-ubuntu-linux" title="Permalink to this headline">¶</a></h3>
+<p>Install Git:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ sudo apt install git-all
 </pre></div>
 </div>
+</div>
+<div class="section" id="more-git-installation-info">
+<h3>More Git installation info<a class="headerlink" href="#more-git-installation-info" title="Permalink to this headline">¶</a></h3>
 <p>See the <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">installing Git documentation</a> for more
 information and troubleshooting.</p>
 </div>
@@ -348,8 +355,8 @@ successful learning process.</p>
 <li><p><a class="reference external" href="https://learn-2.galvanize.com/">https://learn-2.galvanize.com/</a></p></li>
 <li><p><a class="reference external" href="https://vimeo.com/">https://vimeo.com/</a></p></li>
 </ul>
-<p>We use Vimeo for pre-recorded lecture videos.  GitHub or more in general a centralized resource for version control
-is a cornerstone of modern data science.</p>
+<p>We use Vimeo for pre-recorded lecture videos. Using a centralized resource for version control
+(like GitHub) is a cornerstone of modern data science.</p>
 </div>
 <div class="section" id="additional-resources">
 <h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>

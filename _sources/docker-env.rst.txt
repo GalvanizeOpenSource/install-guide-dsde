@@ -4,8 +4,8 @@
 Docker Installation Guide
 ***************************
 
-`Docker <https://www.docker.com/>`_ is now firmly placed among the most important tools for a data team.  It is an
-open-source application that performs operating-system level
+`Docker <https://www.docker.com/>`_ is now firmly placed among the most important tools for a data science team.
+It is an open-source application that performs operating-system level
 `containerization <https://en.wikipedia.org/wiki/Operating-system-level_virtualization>`_. These containers can hold
 multiple independently running applications.  Docker creates a portable and reusable environment and it is far easier
 then running explicit servers or virtual environments.  In data science today, Docker is the industry standard for
@@ -13,7 +13,7 @@ containerization of machine learning models and AI services.
 
 The community package of the Docker Engine is called ``docker-ce``.  Fundamentally, a docker container can be thought
 of as a running script with all the necessary components bundled within.  The containers themselves sit on top of an
-operating system as shown in the following image.
+operating system as shown in the following diagram.
 
 .. figure:: ./images/containers.png
    :scale: 100%
@@ -22,7 +22,7 @@ operating system as shown in the following image.
    :figclass: align-center
 
 The Docker container is a running process that is kept isolated from the host and from other containers. One of the
-important consequence of this isolation is that each container interacts with its own private filesystem. A Docker image
+important consequences of this isolation is that each container interacts with its own private filesystem. A Docker image
 includes everything needed to run an application: code, runtime libraries, and a private filesystem.
 
 Docker installation and setup
@@ -35,6 +35,7 @@ To install the Docker Engine use the appropriate guide from the following:
 * `Docker Windows install guide <https://docs.docker.com/docker-for-windows/install/>`_
 
 When you have finished the install you should be able to run the "hello world" example.
+To install it, perform the following steps:
 
 .. code-block:: bash
 
@@ -63,24 +64,24 @@ NVIDIA Docker
    This section on NVIDIA Docker is here for your reference, but it is not required for Galvanize trainings
 
 To use `TensorFlow <https://www.tensorflow.org/>`_ with a GPU you need to ensure that the
-`NVIDIA driver <https://www.nvidia.com/Download/index.aspx>`_, `CUDA <https://developer.nvidia.com/cuda-zone>`_ and
-additional required libraries are set up and versioned appropriately. Then you can install ``tensroflow-gpu``.  There is
-some amount of overhead involved in getting this ecosystem running smoothly and additionally there are maintenance
+`NVIDIA driver <https://www.nvidia.com/Download/index.aspx>`_, `CUDA <https://developer.nvidia.com/cuda-zone>`_, and
+additional required libraries are set up and versioned appropriately. Then you can install ``tensorflow-gpu``.  There is
+some amount of overhead involved in getting this ecosystem running smoothly. Additionally, there are maintenance
 requirements as the stable version changes over time.  TensorFlow can also be installed via Docker with the use of a GPU.
 
-The process is similar for `PyTorch <https://pytorch.org/>`_, `Caffe <https://caffe.berkeleyvision.org/>`_ and in general
-any deep-learning framework that makes use of GPUs.  The NVIDIA container toolkit or simply
-`nvidia-docker <https://github.com/NVIDIA/nvidia-docker>`_ is an incredibly convenient way to build and run
-GPU-accelerated Docker containers.  Once this is done, you can pull down the latest GPU version of tensorflow with Jupyter
-support with: 
+The process is similar for `PyTorch <https://pytorch.org/>`_, `Caffe <https://caffe.berkeleyvision.org/>`_, and (in general)
+any deep-learning framework that makes use of GPUs.  The NVIDIA container toolkit, or simply
+`nvidia-docker <https://github.com/NVIDIA/nvidia-docker>`_, is an incredibly convenient way to build and run
+GPU-accelerated Docker containers.  Once this is done, you can pull down the latest GPU version of tensorflow (with Jupyter
+support) by doing this:
 
 .. code-block:: bash
 
     ~$ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 
 NVIDIA Docker and GPU computing are not required for this course or any in this specialization, but
-knowledge of Dockerized versions of TensorFlow and similar tools can save significant amounts of time.  You will need
-to ensure that ``docker-ce`` is installed.
+knowledge of Dockerized versions of TensorFlow and similar tools can save significant amounts of time (you will need
+to ensure that ``docker-ce`` is installed).
 
 Additional Resources
 ===========================

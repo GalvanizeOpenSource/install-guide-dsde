@@ -27,7 +27,7 @@ install and maintain a local environment.
    python-env
    docker-env
 
-If you would like to learn more about the data science at Galvanize:
+If you would like to learn more about data science at Galvanize:
 
 * `Data Science Bootcamp <https://www.galvanize.com/data-science-bootcamp>`_
 * `Galvanize Enterprise Talent Transformation <https://www.galvanize.com/companies>`_

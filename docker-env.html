@@ -187,20 +187,20 @@
 </style>
 <div class="section" id="docker-installation-guide">
 <h1>Docker Installation Guide<a class="headerlink" href="#docker-installation-guide" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://www.docker.com/">Docker</a> is now firmly placed among the most important tools for a data team.  It is an
-open-source application that performs operating-system level
+<p><a class="reference external" href="https://www.docker.com/">Docker</a> is now firmly placed among the most important tools for a data science team.
+It is an open-source application that performs operating-system level
 <a class="reference external" href="https://en.wikipedia.org/wiki/Operating-system-level_virtualization">containerization</a>. These containers can hold
 multiple independently running applications.  Docker creates a portable and reusable environment and it is far easier
 then running explicit servers or virtual environments.  In data science today, Docker is the industry standard for
 containerization of machine learning models and AI services.</p>
 <p>The community package of the Docker Engine is called <code class="docutils literal notranslate"><span class="pre">docker-ce</span></code>.  Fundamentally, a docker container can be thought
 of as a running script with all the necessary components bundled within.  The containers themselves sit on top of an
-operating system as shown in the following image.</p>
+operating system as shown in the following diagram.</p>
 <div class="align-center figure">
 <a class="reference internal image-reference" href="_images/containers.png"><img alt="containers" src="_images/containers.png" style="width: 715.0px; height: 470.0px;" /></a>
 </div>
 <p>The Docker container is a running process that is kept isolated from the host and from other containers. One of the
-important consequence of this isolation is that each container interacts with its own private filesystem. A Docker image
+important consequences of this isolation is that each container interacts with its own private filesystem. A Docker image
 includes everything needed to run an application: code, runtime libraries, and a private filesystem.</p>
 <div class="section" id="docker-installation-and-setup">
 <h2>Docker installation and setup<a class="headerlink" href="#docker-installation-and-setup" title="Permalink to this headline">¶</a></h2>
@@ -210,7 +210,8 @@ includes everything needed to run an application: code, runtime libraries, and a
 <li><p><a class="reference external" href="https://docs.docker.com/docker-for-mac/install">Docker macOS install guide</a></p></li>
 <li><p><a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">Docker Windows install guide</a></p></li>
 </ul>
-<p>When you have finished the install you should be able to run the “hello world” example.</p>
+<p>When you have finished the install you should be able to run the “hello world” example.
+To install it, perform the following steps:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ docker run hello-world
 </pre></div>
 </div>
@@ -233,21 +234,21 @@ that we will get into, but this is the basis for running containers.</p>
 <p>This section on NVIDIA Docker is here for your reference, but it is not required for Galvanize trainings</p>
 </div>
 <p>To use <a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a> with a GPU you need to ensure that the
-<a class="reference external" href="https://www.nvidia.com/Download/index.aspx">NVIDIA driver</a>, <a class="reference external" href="https://developer.nvidia.com/cuda-zone">CUDA</a> and
-additional required libraries are set up and versioned appropriately. Then you can install <code class="docutils literal notranslate"><span class="pre">tensroflow-gpu</span></code>.  There is
-some amount of overhead involved in getting this ecosystem running smoothly and additionally there are maintenance
+<a class="reference external" href="https://www.nvidia.com/Download/index.aspx">NVIDIA driver</a>, <a class="reference external" href="https://developer.nvidia.com/cuda-zone">CUDA</a>, and
+additional required libraries are set up and versioned appropriately. Then you can install <code class="docutils literal notranslate"><span class="pre">tensorflow-gpu</span></code>.  There is
+some amount of overhead involved in getting this ecosystem running smoothly. Additionally, there are maintenance
 requirements as the stable version changes over time.  TensorFlow can also be installed via Docker with the use of a GPU.</p>
-<p>The process is similar for <a class="reference external" href="https://pytorch.org/">PyTorch</a>, <a class="reference external" href="https://caffe.berkeleyvision.org/">Caffe</a> and in general
-any deep-learning framework that makes use of GPUs.  The NVIDIA container toolkit or simply
-<a class="reference external" href="https://github.com/NVIDIA/nvidia-docker">nvidia-docker</a> is an incredibly convenient way to build and run
-GPU-accelerated Docker containers.  Once this is done, you can pull down the latest GPU version of tensorflow with Jupyter
-support with:</p>
+<p>The process is similar for <a class="reference external" href="https://pytorch.org/">PyTorch</a>, <a class="reference external" href="https://caffe.berkeleyvision.org/">Caffe</a>, and (in general)
+any deep-learning framework that makes use of GPUs.  The NVIDIA container toolkit, or simply
+<a class="reference external" href="https://github.com/NVIDIA/nvidia-docker">nvidia-docker</a>, is an incredibly convenient way to build and run
+GPU-accelerated Docker containers.  Once this is done, you can pull down the latest GPU version of tensorflow (with Jupyter
+support) by doing this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 </pre></div>
 </div>
 <p>NVIDIA Docker and GPU computing are not required for this course or any in this specialization, but
-knowledge of Dockerized versions of TensorFlow and similar tools can save significant amounts of time.  You will need
-to ensure that <code class="docutils literal notranslate"><span class="pre">docker-ce</span></code> is installed.</p>
+knowledge of Dockerized versions of TensorFlow and similar tools can save significant amounts of time (you will need
+to ensure that <code class="docutils literal notranslate"><span class="pre">docker-ce</span></code> is installed).</p>
 <div class="section" id="additional-resources">
 <h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
